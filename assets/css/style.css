@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #171100;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+}
+
+body {
+    font-size: 62.5%;
+    font-family: "Sen", sans-serif;
+    font-family: "Poppins", sans-serif;
+    height: 10000px;
+}
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 48px);
+}
+
+.btn{
+    
+}
+
+/* header */
+
+.header {
+    padding: 36px 0 10px;
+    position: sticky;
+    z-index: 1;
+    top: -26px;
+    background-color: #fffcf4;
+}
+.header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.header ul {
+    margin-left: auto;
+    display: flex;
+    gap: 42px;
+}
+
+/* .header li {
+    display: inline-block;
+} */
+
+.header li a {
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.header li a:hover {
+    color: var(--main-color);
+    font-size: 1.6rem;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.header .sign-in-btn {
+    margin-left: 70px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: Poppins;
+    font-weight: 600;
+    padding: 17px 26px;
+    background-color: var(--main-color);
+    border-radius: 24.5px;
+}
