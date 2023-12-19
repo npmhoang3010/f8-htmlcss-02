@@ -127,7 +127,7 @@ a {
     flex: 1;
 }
 
-.hero-wrap .info {
+.hero-wrap .info-block {
     flex: 1;
     /* padding: 0 48px; */
     margin-left: 168px;
