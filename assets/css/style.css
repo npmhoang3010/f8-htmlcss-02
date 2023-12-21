@@ -30,6 +30,21 @@ a {
     color: #fff;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
 .main-content {
     width: 1170px;
     margin-left: auto;
@@ -48,6 +63,10 @@ a {
     font-family: Poppins;
     font-weight: 600;
     border-radius: 999px;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 
 /* header */
@@ -112,10 +131,6 @@ a {
     padding: 11px 41px;
 }
 
-.header .sign-in-btn:hover {
-    opacity: 0.8;
-}
-
 /* hero wrap */
 
 .hero-wrap {
@@ -125,6 +140,7 @@ a {
 
 .hero-wrap .media-block {
     flex: 1;
+    position: relative;
 }
 
 .hero-wrap .info-block {
@@ -195,4 +211,217 @@ a {
     font-family: Poppins;
     font-weight: 600;
     margin-left: 14px;
+}
+
+.hero-summary {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 14px;
+    background-color: #fff;
+    width: 270px;
+    /* height: 244px; */
+    border-radius: 12px;
+    padding: 24px;
+    bottom: 48px;
+    right: -80px;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+}
+
+.hero-summary .item {
+    display: flex;
+    align-items: center;
+}
+
+.hero-summary .icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50%;
+}
+
+.hero-summary .info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 16px;
+}
+
+.hero-summary .label {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+
+.hero-summary .title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0em;
+}
+
+.info-block .desc strong {
+    color: var(--main-color);
+    font-size: 4.4rem;
+    font-family: Sen;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.info-block .amount {
+    margin-top: 12px;
+}
+
+/* COURSE */
+
+.course {
+    padding: 200px 0;
+}
+
+.course .main-content {
+    flex-direction: column;
+}
+
+.course .course-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course .heading {
+    color: var(--main-color);
+    font-size: 3.8rem;
+    font-family: Sen;
+    font-weight: 700;
+}
+
+.course .desc {
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-family: Poppins;
+    font-weight: 400;
+    margin-top: 16px;
+    width: 458px;
+    line-height: 30px;
+}
+
+.course .control {
+    display: flex;
+    gap: 16px;
+}
+
+.course .control-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #ffb900;
+    background-color: #fff;
+    border: 1px solid #ffb900;
+}
+
+.course .control-btn:hover {
+    color: #fff;
+    background-color: #ffb900;
+}
+
+.course-items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 55px;
+    gap: 30px;
+}
+
+.course-items .item {
+    flex: 1;
+}
+
+.course-items .item img {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.course-items .item-info {
+    width: 100%;
+    padding: 16px 22px;
+    border: 1px solid #e2dfda;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-top: -3px;
+}
+.course-items .item:hover .item-info {
+    border: none;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+
+.course-items .item-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-heading h3 {
+    color: #171100;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
+.item-heading .rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.item-heading .rating img {
+    width: 18px;
+    height: 18px;
+}
+
+.item-heading .rating span {
+    margin-left: 4px;
+    color: #ffb900;
+}
+
+.item-info .desc {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    line-height: 30px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.item-info .action {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    align-items: center;
+}
+
+.item-info .item-price {
+    color: var(--main-color);
+    font-size: 1.8rem;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.item-info .btn {
+    background: var(--main-color);
+    width: 118px;
+    text-align: center;
+    padding: 12px 24px;
+    font-size: 1.4rem;
+    line-height: 26px;
+}
+
+.item-info .btn:hover {
+    background: #ffb900;
+    opacity: 0.9;
 }
